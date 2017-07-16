@@ -18,7 +18,6 @@ def augment(url, parameters):
                                consumer, token)
     return oauth_request.to_url()
 
-
 def test_me():
     print('* Calling Twitter...')
     url = augment('https://api.twitter.com/1.1/statuses/user_timeline.json',
